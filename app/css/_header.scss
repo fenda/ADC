@@ -1,0 +1,23 @@
+#preheader {background:#e52b50; color:#FFF; overflow:hidden;
+	i {margin-right:5px; font-size:20px;}
+	p {margin-right:30px; font-size:14px;}
+	span {margin-left:10px;}
+	a {color:#FFF;}
+	.right {
+		p {margin-right:0;}
+	}
+}
+
+#header {background:#132438; padding:20px 0; overflow:hidden;
+	.logo {float:left;}
+	nav {float:right;
+		a {color:#FFF; text-decoration:none;
+			&.active {color:#f33d61;}
+		}
+	}
+	ul {margin:0; padding:35px 0;
+		li {display:inline-block; margin:0 10px; text-transform:uppercase;
+			&:last-child {margin-right:0;}
+		}
+	}
+}
