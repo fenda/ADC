@@ -4,6 +4,78 @@ html(lang="en")
 		title Artistic Dance Center
 		link(href='/css/vendor/font-awesome.min.css', rel='stylesheet')
 		link(href='/css/style.min.css', rel='stylesheet')
-		script(src='/scripts/scripts.min.js')
+		link(href='/css/vendor/owl.carousel.min.css', rel='stylesheet')
+		link(href='/css/vendor/owl.transition.min.css', rel='stylesheet')
 	body
 		include ./partials/header.jade
+		include ./partials/slider.jade
+
+		#about
+			.wrapper
+				.titleBox
+					h1 About ADC
+				img(src='images/aboutADC.jpg', alt='About ADC')
+				p Artistic Dance Center (ADC), was established in Doral, FL under the direction and vision of Elizabeth Acuña Nuevo. Since its establishment in May of 2003, it has trained it’s students for professional careers in ballet and other dance forms. In 2006, Lissette Salgado Lucas joined the staff at ADC, later to become the Assistant Director of the school. Artistic Dance Center has become an independent institution focusing intensely on its mission of excellence in dance education. The School has an enrollment of more than 250 students. Students at ADC receive the opportunity to train with an experienced and dedicated faculty as well as guest educators from around the world. The School launched the Summer Intensive Program in July 2003 as well as it’s Summer Dance Camp for the young dancer. The Summer Program has drawn dancers from all around the country and International students from Italy, Mexico, Venezuela, Japan and more. 
+				p.readMore
+					a(href='#') Read more
+
+		#testimonials
+			.wrapper
+				h1 Testimonials
+				.container
+					.item
+						p Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur.
+						p.author - John Doe
+					.item
+						p Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur.
+						p.author - Regina Phalange
+					.item
+						p Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur.
+						p.author - Art Vandelay
+
+		#ourStudio
+			.wrapper
+				.titleBox
+					h1 Our Studio
+				.col50
+					p Our studios have:
+					ul
+						li The latest technology in wooden floor for dancers with state-of-the-art sub-floors for shock absorption &amp; a resilient athletic surface.
+						li 2nd floor Observation Deck and waiting area
+						li High ceilings
+						li State-of-the-art sound system
+						li Dressing room
+				.col50.last
+					ul
+						li Up to 3 Studios
+					p Studio A: 20’ x 30’
+					p Studio B: 27’ x 34’
+					p Studio C: 27’ x 26’
+					p Studio BC: 60’ x 27’
+					p Studios B &amp; C are divided with a sound-proof partition that can be opened to create a stage sized studio of 60’ x 27’.
+				.carousel.owl-carousel
+					.item
+						img(src='https://unsplash.it/370/290?image=10')
+					.item
+						img(src='https://unsplash.it/370/290?image=31')
+					.item
+						img(src='https://unsplash.it/370/290?image=52')
+					.item
+						img(src='https://unsplash.it/370/290?image=73')
+					.item
+						img(src='https://unsplash.it/370/290?image=94')
+					.item
+						img(src='https://unsplash.it/370/290?image=115')
+					.item
+						img(src='https://unsplash.it/370/290?image=136')
+					.item
+						img(src='https://unsplash.it/370/290?image=157')
+					.item
+						img(src='https://unsplash.it/370/290?image=179')
+					.item
+						img(src='https://unsplash.it/370/290?image=219')
+
+
+		script(src='/scripts/vendor/jquery-2.min.js')
+		script(src='/scripts/vendor/owl.min.js')
+		script(src='/scripts/scripts.min.js')

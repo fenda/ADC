@@ -27,7 +27,7 @@ module.exports = function(grunt){
 			scripts: {
 				expand: true,
 				cwd: 'app/scripts/',
-				src: '**.js',
+				src: ['*.js', '**/*.js'],
 				dest: 'public/scripts/',
 				ext: '.min.js'
 			}
@@ -47,7 +47,9 @@ module.exports = function(grunt){
 			build: {
 				files: {
 					'public/css/style.min.css': 'public/css/style.css',
-					'public/css/vendor/font-awesome.min.css': 'public/css/vendor/font-awesome/font-awesome.css'
+					'public/css/vendor/font-awesome.min.css': 'public/css/vendor/font-awesome/font-awesome.css',
+					'public/css/vendor/owl.carousel.min.css': 'app/css/vendor/owl.carousel.css',
+					'public/css/vendor/owl.transition.min.css': 'app/css/vendor/owl.transition.css'
 				}
 			}
 		},
@@ -78,13 +80,23 @@ module.exports = function(grunt){
 				} ]
 			}
 		},
+		imagemin: {
+			dynamic: {
+				files: [{
+					expand: true,
+					cwd: 'app/images/',
+					src: ['**/*.{png,jpg,gif}'],
+					dest: 'public/images'
+				}]
+			}
+		},
 		watch: {
 			options: {
 				livereload: true
 			},
 			scripts: {
-				files: ['app/scripts/**/*.js'],
-				task: ['jshint:scripts', 'uglify']
+				files: ['app/scripts/**'],
+				task: ['clean', 'jshint:scripts', 'uglify']
 			},
 			styles: {
 				files: ['app/css/**/*.scss'],
@@ -107,7 +119,8 @@ module.exports = function(grunt){
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-clean');
+	grunt.loadNpmTasks('grunt-contrib-imagemin');
 
-	grunt.registerTask('build', ['clean', 'sass', /*'haml',*/ 'jade', 'jshint', 'uglify', 'cssmin']);
+	grunt.registerTask('build', ['clean', 'sass', /*'haml',*/ 'jade', 'jshint', 'uglify', 'cssmin', 'imagemin']);
 	grunt.registerTask('default', ['build', 'connect', 'watch']);
 };

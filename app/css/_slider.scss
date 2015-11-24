@@ -1,0 +1,25 @@
+#slider {position:relative; overflow:hidden;
+	.owl-controls {
+		.owl-buttons {}
+		.owl-buttons > div {position:absolute; color:#FFF; color:rgba(255,255,255,.4); font-size:100px; cursor:pointer;transition: all .5s ease-in; top:40%; left:5%;
+			&:hover {color:rgba(255,255,255,.8);}
+			&.disabled {color:rgba(255,255,255,.4); cursor:pointer; pointer-events:none;}
+			&.owl-next {left:auto; right:5%;}
+		}
+	}
+}
+
+#classes {position:absolute; z-index:9; height:185px; bottom:0; width:1100px; left:50%; margin-left:-550px;
+	.box {position:relative; float:left; width:31%; margin:0 1%; color:#FFF; text-align:left; padding:15px 2%; top:0; transition: all .4s ease-in-out;
+		&.ballet {background:#bb92ef url(../images/ballet.png) right 0; background-size:cover;}
+		&.flamenco {background:#e73d5f url(../images/flamenco.png) right 0; background-size:cover;}
+		&.jazz {background:#bb92ef url(../images/jazz.png) right 0; background-size:cover;}
+		&:hover {top:-56px;}
+
+		a {color:#FFF; text-decoration:none;}
+		h2 {text-transform:uppercase; font-size:20px;}
+		p {font-size:16px; line-height:25px;
+			&.link {text-transform:uppercase;}
+		}
+	}
+}

@@ -12,7 +12,7 @@
 	.logo {float:left;}
 	nav {float:right;
 		a {color:#FFF; text-decoration:none;
-			&.active {color:#f33d61;}
+			&.active, &:hover {color:#f33d61;}
 		}
 	}
 	ul {margin:0; padding:35px 0;
