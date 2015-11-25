@@ -2,10 +2,10 @@ doctype html
 html(lang="en")
 	head
 		title Artistic Dance Center
-		link(href='/css/vendor/font-awesome.min.css', rel='stylesheet')
-		link(href='/css/style.min.css', rel='stylesheet')
-		link(href='/css/vendor/owl.carousel.min.css', rel='stylesheet')
-		link(href='/css/vendor/owl.transition.min.css', rel='stylesheet')
+		link(href='css/vendor/font-awesome.min.css', rel='stylesheet')
+		link(href='css/style.min.css', rel='stylesheet')
+		link(href='css/vendor/owl.carousel.min.css', rel='stylesheet')
+		link(href='css/vendor/owl.transition.min.css', rel='stylesheet')
 	body
 		include ./partials/header.jade
 		include ./partials/slider.jade
@@ -55,27 +55,111 @@ html(lang="en")
 					p Studios B &amp; C are divided with a sound-proof partition that can be opened to create a stage sized studio of 60’ x 27’.
 				.carousel.owl-carousel
 					.item
-						img(src='https://unsplash.it/370/290?image=10')
+						a(href='#')
+							img(src='https://unsplash.it/370/290?image=10')
 					.item
-						img(src='https://unsplash.it/370/290?image=31')
+						a(href='#')
+							img(src='https://unsplash.it/370/290?image=31')
 					.item
-						img(src='https://unsplash.it/370/290?image=52')
+						a(href='#')
+							img(src='https://unsplash.it/370/290?image=52')
 					.item
-						img(src='https://unsplash.it/370/290?image=73')
+						a(href='#')
+							img(src='https://unsplash.it/370/290?image=73')
 					.item
-						img(src='https://unsplash.it/370/290?image=94')
+						a(href='#')
+							img(src='https://unsplash.it/370/290?image=94')
 					.item
-						img(src='https://unsplash.it/370/290?image=115')
+						a(href='#')
+							img(src='https://unsplash.it/370/290?image=115')
 					.item
-						img(src='https://unsplash.it/370/290?image=136')
+						a(href='#')
+							img(src='https://unsplash.it/370/290?image=136')
 					.item
-						img(src='https://unsplash.it/370/290?image=157')
+						a(href='#')
+							img(src='https://unsplash.it/370/290?image=157')
 					.item
-						img(src='https://unsplash.it/370/290?image=179')
+						a(href='#')
+							img(src='https://unsplash.it/370/290?image=179')
 					.item
-						img(src='https://unsplash.it/370/290?image=219')
+						a(href='#')
+							img(src='https://unsplash.it/370/290?image=219')
+
+		#freeClasses
+			.wrapper
+				h2 Try us out for 2 free classes
+					a(href='#') Sign up now
+
+		#ourTeachers
+			.wrapper
+				.titleBox
+					h1 Our Teachers
+
+				p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+				.carousel
+					.item
+						a(href='#')
+							.hoverDiag
+								h1 Name of the teacher
+								h2 Professional positions of the teacher
+							.hover
+								p More Details About this Teacher
+							img(src='images/teachers/teacher1.jpg')
+					.item
+						a(href='#')
+							.hoverDiag
+								h1 Name of the teacher
+								h2 Professional positions of the teacher
+							.hover
+								p More Details About this Teacher
+							img(src='images/teachers/teacher4.jpg')
+					.item
+						a(href='#')
+							.hoverDiag
+								h1 Name of the teacher
+								h2 Professional positions of the teacher
+							.hover
+								p More Details About this Teacher
+							img(src='images/teachers/teacher3.jpg')
+					.item
+						a(href='#')
+							.hoverDiag
+								h1 Name of the teacher
+								h2 Professional positions of the teacher
+							.hover
+								p More Details About this Teacher
+							img(src='images/teachers/teacher4.jpg')
+					.item
+						a(href='#')
+							.hoverDiag
+								h1 Name of the teacher
+								h2 Professional positions of the teacher
+							.hover
+								p More Details About this Teacher
+							img(src='images/teachers/teacher1.jpg')
+					.item
+						a(href='#')
+							.hoverDiag
+								h1 Name of the teacher
+								h2 Professional positions of the teacher
+							.hover
+								p More Details About this Teacher
+							img(src='images/teachers/teacher3.jpg')
+					.item
+						a(href='#')
+							.hoverDiag
+								h1 Name of the teacher
+								h2 Professional positions of the teacher
+							.hover
+								p More Details About this Teacher
+							img(src='images/teachers/teacher4.jpg')
 
 
-		script(src='/scripts/vendor/jquery-2.min.js')
-		script(src='/scripts/vendor/owl.min.js')
-		script(src='/scripts/scripts.min.js')
+
+		include ./partials/footer.jade
+
+
+		script(src='scripts/vendor/jquery-2.min.js')
+		script(src='scripts/vendor/owl.min.js')
+		script(src='scripts/scripts.min.js')

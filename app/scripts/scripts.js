@@ -49,6 +49,20 @@ $(document).ready(function(){
 		pagination: false,
 		rewindNav: false
 	});
+
+	$('#ourTeachers .carousel').owlCarousel({
+		items: 4,
+		itemsDesktop: false,
+		itemsDesktopSmall: 3,
+		itemsTablet: 3,
+		itemsTabletSmall: 2,
+		itemsMobile:1,
+		navigation: true,
+		navigationText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+		//nav:true,
+		pagination: false,
+		rewindNav: false
+	});
 });
 
 $(window).resize(function() {
