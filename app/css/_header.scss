@@ -1,4 +1,4 @@
-#preheader {background:#e52b50; color:#FFF; overflow:hidden;
+#preheader {background:$pink; color:#FFF; overflow:hidden;
 	i {margin-right:5px; font-size:20px;}
 	p {margin-right:30px; font-size:14px;}
 	span {margin-left:10px;}
@@ -8,16 +8,23 @@
 	}
 }
 
-#header {background:#132438; padding:20px 0; overflow:hidden;
+#header {background:$darkBlue; padding:20px 0; overflow:hidden;
 	.logo {float:left;}
 	nav {float:right;
 		a {color:#FFF; text-decoration:none;
-			&.active, &:hover {color:#f33d61;}
+			&.active, &:hover {color:$pink;}
 		}
 	}
 	ul {margin:0; padding:35px 0;
 		li {display:inline-block; margin:0 10px; text-transform:uppercase;
 			&:last-child {margin-right:0;}
 		}
+		ul {position:absolute; margin:0; padding:0; padding-top:12px; margin-left:20px; display:none;
+			li {text-transform:none; margin:0;
+				&:after {content:'|'; color:#FFF; margin:0 7px 0 10px;}
+				&:last-child:after {content:'';}
+			}
+		}
+		li:hover ul {display:block;}
 	}
 }

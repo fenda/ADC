@@ -10,7 +10,7 @@ html(lang="en")
 		include ./partials/header.jade
 		include ./partials/slider.jade
 
-		#about
+		section#about
 			.wrapper
 				.titleBox
 					h1 About ADC
@@ -19,7 +19,7 @@ html(lang="en")
 				p.readMore
 					a(href='#') Read more
 
-		#testimonials
+		section#testimonials
 			.wrapper
 				h1 Testimonials
 				.container
@@ -33,7 +33,7 @@ html(lang="en")
 						p Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur.
 						p.author - Art Vandelay
 
-		#ourStudio
+		section#ourStudio
 			.wrapper
 				.titleBox
 					h1 Our Studio
@@ -85,17 +85,14 @@ html(lang="en")
 						a(href='#')
 							img(src='https://unsplash.it/370/290?image=219')
 
-		#freeClasses
-			.wrapper
-				h2 Try us out for 2 free classes
-					a(href='#') Sign up now
+		include ./partials/free_classes.jade
 
-		#ourTeachers
+		section#ourTeachers
 			.wrapper
 				.titleBox
 					h1 Our Teachers
 
-				p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+				p.description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
 				.carousel
 					.item

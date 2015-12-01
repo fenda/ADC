@@ -1,0 +1,112 @@
+doctype html
+html(lang="en")
+	head
+		title Artistic Dance Center
+		link(href='css/vendor/font-awesome.min.css', rel='stylesheet')
+		link(href='css/style.min.css', rel='stylesheet')
+		link(href='css/vendor/owl.carousel.min.css', rel='stylesheet')
+		link(href='css/vendor/owl.transition.min.css', rel='stylesheet')
+	body
+		include ./partials/header.jade
+
+		section.page
+			.pageHeader
+				img(src='images/header-about.jpg')
+				.wrapper
+					h1 About ADC
+
+			.wrapper
+				article.withSidebar
+					h2 Introduction
+
+					p Artistic Dance Center (ADC), was established in Doral, FL under the direction and vision of Elizabeth Acuña Nuevo. Since its establishment in May of 2003, it has trained it’s students for professional careers in ballet and other dance forms. In 2006, Lissette Salgado Lucas joined the staff at ADC, later to become the Assistant Director of the school. Artistic Dance Center has become an independent institution focusing intensely on its mission of excellence in dance education. The School has an enrollment of more than 250 students. Students at ADC receive the opportunity to train with an experienced and dedicated faculty as well as guest educators from around the world. The School launched the Summer Intensive Program in July 2003 as well as it’s Summer Dance Camp for the young dancer. The Summer Program has drawn dancers from all around the country and International students from Italy, Mexico, Venezuela, Japan and more.
+
+					p ADC isn’t just a school. It’s a collaboration. Dedicated, passionate people who come together to make sure that our commitment to dance is upheld, and available to all who seek it out. From our staff and artists and to our many volunteers, the ADC family works tirelessly to ensure that we stay true to our unique vision of quality dance education. It offers a full range of programs for all ages. Artistic Dance Center’s experience instills in students self-discipline and an eagerness to learn, enriching their lives regardless of the careers they ultimately pursue. The school’s faculty includes distinguished instructors and choreographers, as well as current and former dancers from major companies worldwide. The school does not discriminate on the basis of ethnicity, gender or religion in its admissions procedures, employment policies, or the administration of its programs and activities.
+
+					p Artistic Dance Center was selected “Outstanding School” at the American Dance Competition from 2008 to 2012 . It was also selected as the to perform in 2010 with the Ajkun Ballet Theatre, an Internationally renowned dance company based in New York. It was selected amongst many other major dance schools around the country. The school continues to grow and produce dancers that will be competitive in the dance world. It’s students have been presented with numerous awards including top awards at the Youth America Grand Prix (YAGP) competition and scholarships for the best schools around the country. Students of ADC have also been selected to perform in the Broadway production of The Christmas Spectacular with the New York City Rockettes, as Clara, Florida Grand Opera performances of AIDA, and with the New World School of the Arts performances of Hansel &amp; Gretel.
+
+				aside
+					h2 Classes
+					ul.progressBar
+						li
+							p Ballet 95%
+							div.percentage
+								span.nine5
+						li
+							p Ponite 95%
+							div.percentage
+								span.nine5
+						li
+							p Flamenco 70%
+							div.percentage
+								span.seven
+						li
+							p Hip Hop 75%
+							div.percentage
+								span.seven5
+						li
+							p Jazz 85%
+							div.percentage
+								span.eight5
+						li
+							p Tumbling 80%
+							div.percentage
+								span.eight
+						li
+							p Aerial 55%
+							div.percentage
+								span.five5
+						li
+							p Intensive Program 25%
+							div.percentage
+								span.two5
+						li
+							p Stretch 30%
+							div.percentage
+								span.three
+		
+		include ./partials/free_classes.jade
+		#ourSpecialties
+			.wrapper
+				.titleBox
+					h1 Our Specialties
+				p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+				ul.specialties
+					li
+						.img
+							img(src='images/icon_ballet.png' alt='Ballet')
+						h3 Ballet
+						p Fusce dapibus, tellus ac cursus commodo,<br>tortor mauris condimentum nibh, ut<br>fermentum massa sagittis.
+					li
+						.img
+							img(src='images/icon_flamenco.png' alt='Flamenco')
+						h3 Flamenco
+						p Fusce dapibus, tellus ac cursus commodo,<br>tortor mauris condimentum nibh, ut<br>fermentum massa sagittis.
+					li.hidden
+						.img
+							img(src='images/icon_jazz.png' alt='Flamenco')
+						h3 Jazz
+						p Fusce dapibus, tellus ac cursus commodo,<br>tortor mauris condimentum nibh, ut<br>fermentum massa sagittis.
+					li
+						.img
+							img(src='images/icon_jazz.png' alt='Jazz')
+						h3 Jazz
+						p Fusce dapibus, tellus ac cursus commodo,<br>tortor mauris condimentum nibh, ut<br>fermentum massa sagittis.
+					li
+						.img
+							img(src='images/icon_hiphop.png' alt='Hip Hop')
+						h3 Hip Hop
+						p Fusce dapibus, tellus ac cursus commodo,<br>tortor mauris condimentum nibh, ut<br>fermentum massa sagittis.
+
+
+
+
+
+		
+		include ./partials/footer.jade
+
+
+		script(src='scripts/vendor/jquery-2.min.js')
+		script(src='scripts/vendor/owl.min.js')
+		script(src='scripts/scripts.min.js')
