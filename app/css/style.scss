@@ -2,11 +2,12 @@
 
 @import 'normalize';
 @import 'fonts';
-@import 'global';
+@import 'percentages';
 
 @import 'header';
 @import 'slider';
-
 @import 'contact';
-
 @import 'footer';
+
+@import 'modules';
+@import 'global';

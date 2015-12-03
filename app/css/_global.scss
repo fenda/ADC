@@ -10,7 +10,9 @@ a {text-decoration:none;
 .left {float:left;}
 .right {float:right;}
 
-img {max-width:100%;}
+img {max-width:100%;
+	&.left {margin-right:40px;}
+}
 
 h1 {display:inline-block; font-size:36px; line-height:36px; font-weight:600; text-transform:uppercase; margin:0; padding:0 20px;}
 
@@ -21,176 +23,59 @@ h1 {display:inline-block; font-size:36px; line-height:36px; font-weight:600; tex
 // @extend
 p.description {text-align:center; font-size:17px; line-height:25px;}
 
-#about {overflow:hidden;
-	img {float:left; margin-right:60px; width:40%;}
-	p {line-height:23px;
-		&.readMore a {text-transform:uppercase; color:#e92544;}
-	}
-}
-
-#testimonials {position:relative; display:inline-block; width:100%; background:#bd8bf1; color:#FFF; text-align:center; padding:70px 0 40px; margin-bottom:0;
-	.wrapper {background: url(../images/testimonialBg.png) no-repeat 50% 20px;}
-	h1 {background:#bd8bf1;}
-	.container {width:790px; margin:0 auto; overflow:hidden;}
-	.item {padding:20px 50px; font-style:italic; font-size:16px;}
-	.owl-controls {float:left; width:100%; margin-top:10px;
-		.owl-page {display:inline-block; border:4px solid #000; border-radius:10px; margin:10px; cursor:pointer;
-			span {display:block; background:#000; width:8px; height:8px; border-radius:10px;}
-			&.active span {background:#FFF;}
-		}
-	}
-}
-
-#ourStudio {padding:50px 0; overflow:hidden;
-	.col50 {float:left; width:50%; padding:0 3% 0 10%;
-		p {margin:0 0 7px;}
-		ul {list-style:none; margin:0; padding:0;
-			li {padding:0; margin:0 0 7px;
-				&:before {content:'- ';}
-			}
-		}
-		&.last {border-left:1px solid #e3e3e3; padding:0 3% 0 3%;
-			p {padding-left:10px;}
-		}
-	}
-	.carousel {width:100%; float:left; margin-top:80px;
-		.owl-wrapper-outer {overflow:hidden;}
-		.owl-controls {position:absolute; width:calc(100% + 40px); top:0; left:-70px; font-size:80px; color:#333;
-			.owl-buttons > div {cursor:pointer; position:absolute; top:90px;
-				&.owl-next {left:auto; right:-100px;}
-				&.disabled {opacity:.3; cursor:default;}
-
-			}
-		}
-		a {position:relative; display:inline-block;
-			&:after {content:''; position:absolute; width:100%; height:100%; background: rgba(229,43,80,0.7); top:0; left:0; z-index:5; opacity:0; transition: opacity .5s;}
-		}
-		.item:hover a:after {opacity:1;}
-	}
-}
-
-#freeClasses {background:$purple; color:#FFF; text-align:center; padding:30px 0;
-	h2 {font-size:30px; font-weight:600; line-height:21px; text-transform:uppercase;
-		a {top:-4px; position:relative; background:#132438; color:#FFF; font-size:14px; line-height:19px; padding:10px 20px; margin-left:35px; transition: all .3s linear;
-			&:hover {color:#132438; background:#FFF; text-decoration:none;}
-		}
-	}
-}
-
-#ourTeachers {overflow:hidden;
-	.carousel {
-		.owl-wrapper-outer {overflow:hidden;}
-		.item {position:relative; overflow:hidden;
-			.hoverDiag {width:245px; height:260px; position:absolute; top:-100%; left:-100%; padding:20px 0px; z-index:777; opacity:0; transition:.6s;
-				&:after {content: ""; background:#132438; position:absolute; height:200%; width:100%; top:-202px; left:-98px; z-index:-1; transform:rotate(42deg); -webkit-transform: rotate(42deg);-moz-transform: rotate(42deg); -o-transform: rotate(42deg); -ms-transform: rotate(42deg); box-shadow: 5px 5px 0px rgba(0,0,0,0.2);}
-			}
-			.hover {background: rgba(229,43,80,0.7); position:absolute; width:92%; height:95.2%;    top:0; left:0; z-index:2; margin:4%; opacity:0; transition:.4s;}
-			h1 {color:#FFF; font-size:23px; line-height:27px;}
-			h2 {font-size:12px; line-height:17px; color: #FFF; text-transform:uppercase; font-weight:500; padding:0 20px; margin:5px 0; width:125px;}
-			img {padding:4%;}
-			p {position:absolute; bottom:60px; color:#FFF; width:62%; margin:0 18%; text-align:center; padding:10px 5%; border:1px solid #FFF; border-width:1px 0;}
-		}
-
-		.owl-controls {position:absolute; width:calc(100% + 40px); top:0; left:-70px; font-size:80px; color:#333;
-			.owl-buttons > div {cursor:pointer; position:absolute; top:170px;
-				&.owl-next {left:auto; right:-100px;}
-				&.disabled {opacity:.3; cursor:default;}
-
-			}
-		}
-	}
-	.item {
-		&:hover .hover {opacity:1;}
-		&:hover .hoverDiag {opacity:1; top:0; left:0;}
-	}
-}
-
 // pages
 .pageHeader {background:$purple; margin-bottom:50px;
+	img {width:100%; max-width:auto;}
 	h1 {font-weight:400; font-size:24px; color:#FFF; margin:24px 0 30px; line-height:24px;}
 }
 
 .page {margin-bottom:80px;
-	h2 {font-size:28px; font-weight:600; line-height:25px; text-transform:uppercase; padding-bottom:20px; padding-left:25px;
-		
-	}
-	article {
-		
-		p {font-size:14px; line-height:21px; padding-left:25px; margin-bottom:25px;
+	h2 {font-size:28px; font-weight:600; line-height:25px; text-transform:uppercase; padding-bottom:20px;  position:absolute; top:-20px; margin:0;}
+	article {padding-top:30px;
+		p {font-size:14px; line-height:21px; margin-bottom:25px;
 			&.description {
 				@extend p.description;
 				strong {display:block;}
 			}
 		}
-	&.withSidebar {
-		&:before {content:''; position:absolute; left:-56px; border-bottom:1px solid #000; padding:0 20px 20px;}
-		position:relative; float:left; width:60%; border-left:1px solid #000;
+		img {margin-top:20px;}
+		&.withSidebar {position:relative; float:left; width:57%; margin-top:50px; padding-left:25px;
+			&:before {content:''; position:absolute; left:-56px; top:0; border-bottom:1px solid #000; padding:0 20px 20px; width:110%;}
+			&:after {content:''; position:absolute; border-left:1px solid #000; height:110%; top:-30px; left:0;}
+		}
+		&.fullWidth {margin-top:70px; padding-left:25px;
+			&:before {content:''; position:absolute; left:-56px; top:0; border-bottom:1px solid #000; padding:0 20px 20px; width:110%;}
+			&:after {content:''; position:absolute; border-left:1px solid #000; height:110%; top:-30px; left:0;}
+		}
 	}
-	&.fullWidth {}
-
-	}
-	aside {position:relative; float:right; width:27%; margin-left:2%; border-left:1px solid #000;
-		&:before {content:''; position:absolute; left:-56px; border-bottom:1px solid #000; padding:0 20px 20px;}
-		position:relative; float:left; width:60%; border-left:1px solid #000;
+	aside {position:relative; float:right; width:30%; margin-left:2%; margin-top:50px; padding-left:25px;
+		&:before {content:''; position:absolute; left:-56px; top:0; border-bottom:1px solid #000; padding:0 20px 20px; width:118%;}
+		&:after {content:''; position:absolute; border-left:1px solid #000; height:100%; top:-30px; left:0;}
 	}
 	&:after {content:''; display:table; clear:both;}
 }
 
-.progressBar {margin:0 0 0 30px; padding:0; list-style:none;
-	li {padding:0; margin-bottom:15px;}
-	p {text-transform:uppercase; font-size:20px; text-transform:uppercase; font-weight:600; margin:0 0 7px;}
-	div {position:relative; display:block; width:100%; height:20px; background:$darkBlue;
-		span {position:absolute; height:100%; background: $pink url(../images/progressBarBg.png); display:block;}
-	}
-
-	.half {width:5%;}
-	.one {width:10%;}
-	.one5 {width:15%;}
-	.two {width:20%;}
-	.two5 {width:25%;}
-	.three {width:30%;}
-	.three5 {width:35%;}
-	.four {width:40%;}
-	.four5 {width:45%;}
-	.five {width:50%;}
-	.five5 {width:55%;}
-	.six {width:60%;}
-	.six5 {width:65%;}
-	.seven {width:70%;}
-	.seven5 {width:75%;}
-	.eight {width:80%;}
-	.eight5 {width:85%;}
-	.nine {width:90%;}
-	.nine5 {width:95%;}
-	.ten {width:100%;}
-}
-.home .progressBar {width:49%; float:left; margin:0;}
-
-#ourSpecialties {text-align:center;
-	p {width:70%; margin:0 auto 80px; }
-
-	.specialties {position:relative; z-index:777; display:table; width:80%; margin:0 auto 100px; 
-		&:before, &:after {content:""; width:1px; height:114%; background:#000; position:absolute;left:0; right:0; top:-7%; margin:0 auto;}
-		&:before {transform:rotate(45deg);-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);-ms-transform:rotate(45deg)}
-		&:after{transform:rotate(-45deg);-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-o-transform:rotate(-45deg);-ms-transform:rotate(-45deg)}
-		li {width:33.3333%;float:left;display:inline-block;cursor:pointer;
-			&:first-child, &:last-child {width:100%;}
-			.img {width:140px;height:140px;border-radius:50%;display:table;position:relative;margin:0 auto;-webkit-transition:.4s;-o-transition:.4s;transition:.4s; background:$pink;
-				&:before, &:after {content:"";position:absolute;left:0;right:0;top:-23px;margin:0 auto;z-index:-1;width:1px;height:186px;background:#000;-webkit-transition:.5s;-o-transition:.5s; transition:.5s}
-				&:before{transform:rotate(45deg);-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);-ms-transform:rotate(45deg)}
-				&:after{transform:rotate(-45deg);-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-o-transform:rotate(-45deg);-ms-transform:rotate(-45deg)}
-				img {display:table; margin:auto;}
-				&:hover {background:#132438;-webkit-transition:.4s;-o-transition:.4s;transition:.4s;
-					&:before{transform:rotate(0deg);-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);-o-transform:rotate(0deg);-ms-transform:rotate(0deg);-webkit-transition:.5s;-o-transition:.5s;transition:.5s}
-					&:hover:after{transform:rotate(-90deg);-webkit-transform:rotate(-90deg);-moz-transform:rotate(-90deg);-o-transform:rotate(-90deg);-ms-transform:rotate(-90deg);-webkit-transition:.5s;-o-transition:.5s;transition:.5s}
-				}
-			}
-			h3 {font-size:36px;text-transform:uppercase; margin:30px 0 25px;text-align:center;font-weight:400}
-			p {font-size:14px; text-align:center; margin:0; width:100%;}
-			&.hidden {visibility:hidden;}
-		}
+// ADT The Company
+.theCompany #freeClasses {margin-bottom:0;}
+.sponsorForm {background:$pink; margin-top:45px; color:#FFF; padding:20px; display:inline-block; font-size:16px; line-height:29px;
+	h4 {margin:0; font-size:18px; font-weight:700;}
+	p {font-size:16px; line-height:25px;}
+	a {color:#FFF;}
+	form {display:inline-block; width:100%;}
+	.button input {background:#000; border:1px solid #000;
+		&:hover {background:#FFF; color:#000; border:1px solid #FFF;}
 	}
 }
+
+// Facilities
+.ourFacilities {
+	#freeClasses {margin-bottom:0;}
+	#ourStudio {
+		.carousel {margin-top:30px;}
+		.titleBox {margin-top:30px;}
+	}
+}
+
 
 ul.info {text-align:center; width:100%; list-style:none; margin:40px 0 60px; display:inline-block;
 	li {float:left; width:27.3%; border-top:1px solid transparent; border-bottom:1px solid $pink; margin:0 3%; padding-bottom:20px; transition:.5s; cursor:pointer;

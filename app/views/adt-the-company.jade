@@ -6,14 +6,14 @@ html(lang="en")
 		link(href='css/style.min.css', rel='stylesheet')
 		link(href='css/vendor/owl.carousel.min.css', rel='stylesheet')
 		link(href='css/vendor/owl.transition.min.css', rel='stylesheet')
-	body
+	body.theCompany
 		include ./partials/header.jade
 
 		section.page
 			.pageHeader
-				img(src='images/header-about.jpg')
+				img(src='images/header/company.jpg')
 				.wrapper
-					h1 About ADC
+					h1 ADT - The Company
 
 			.wrapper
 				article.withSidebar
@@ -31,6 +31,27 @@ html(lang="en")
 
 				aside
 					h2 Sponsorships
+
+					.sponsorForm
+						h4 BE A CORPORATE SPONSOR
+						p If you are interested in being a sponsor, please contact us at:
+
+						p Artistic Dance Center <br/> 10181 NW 58th Street, #13 <br/> Miami, FL 33178 <br/> 305-471-4994 <br/>
+							a(href='mailto:info@artisticdancecenter.com') info@artisticdancecenter.com
+
+						p You can also fill out the short form below and we will contact you with details:
+
+						form(action'', method='post')
+							.field.name
+								input(type='text', name='name', id='name', placeholder='Full name')
+							.field.email
+								input(type='text', name='email', id='email', placeholder='Email')
+							.field.subject
+								input(type='text', name='subject', id='subject', placeholder='Phone')
+							.button
+								input(type='submit', name='submit', value='Submit').submitBtn
+
+
 
 		
 		include ./partials/free_classes.jade		

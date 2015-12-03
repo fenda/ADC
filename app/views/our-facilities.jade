@@ -1,0 +1,84 @@
+doctype html
+html(lang="en")
+	head
+		title Artistic Dance Center
+		link(href='css/vendor/font-awesome.min.css', rel='stylesheet')
+		link(href='css/style.min.css', rel='stylesheet')
+		link(href='css/vendor/owl.carousel.min.css', rel='stylesheet')
+		link(href='css/vendor/owl.transition.min.css', rel='stylesheet')
+	body.ourFacilities
+		include ./partials/header.jade
+
+		section.page
+			.pageHeader
+				img(src='images/header/facilities.jpg')
+				.wrapper
+					h1 Our Facilities
+
+			.wrapper
+				article.fullWidth
+					h2 &nbsp;
+					img(src='images/facilities.jpg').left
+
+					p Our studios have:
+
+					p - The latest technology in wooden floor for dancers with state-of-the-art sub-floors for shock absorption &amp; a resilient athletic surface.
+
+					p - 2nd floor Observation Deck and waiting area
+
+					p - Up to 3 Studios
+						span Studio A: 20' x 30'
+						span Studio B: 27' x 34'
+						span Studio C: 27' x 26'
+						span Studio BC: 60' x 27'
+						span Studios B &amp; C are divided with a sound-proof partition that can be opened to create a stage sized studio of 60' x 27'.
+
+					p - High ceilings
+					p - State-of-the-art sound system
+					p - Dressing room
+
+		include ./partials/free_classes.jade	
+
+		section#ourStudio
+			.wrapper
+				.titleBox
+					h1 Studio Gallery
+
+				.carousel.owl-carousel
+					.item
+						a(href='#')
+							img(src='https://unsplash.it/370/290?image=10')
+					.item
+						a(href='#')
+							img(src='https://unsplash.it/370/290?image=31')
+					.item
+						a(href='#')
+							img(src='https://unsplash.it/370/290?image=52')
+					.item
+						a(href='#')
+							img(src='https://unsplash.it/370/290?image=73')
+					.item
+						a(href='#')
+							img(src='https://unsplash.it/370/290?image=94')
+					.item
+						a(href='#')
+							img(src='https://unsplash.it/370/290?image=115')
+					.item
+						a(href='#')
+							img(src='https://unsplash.it/370/290?image=136')
+					.item
+						a(href='#')
+							img(src='https://unsplash.it/370/290?image=157')
+					.item
+						a(href='#')
+							img(src='https://unsplash.it/370/290?image=179')
+					.item
+						a(href='#')
+							img(src='https://unsplash.it/370/290?image=219')
+
+		include ./partials/footer.jade
+
+
+		script(src='scripts/vendor/jquery-2.min.js')
+		script(src='scripts/vendor/owl.min.js')
+		script(src='scripts/scripts.min.js')
