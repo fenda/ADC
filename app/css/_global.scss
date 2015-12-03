@@ -10,16 +10,19 @@ a {text-decoration:none;
 .left {float:left;}
 .right {float:right;}
 
+img {max-width:100%;}
+
 h1 {display:inline-block; font-size:36px; line-height:36px; font-weight:600; text-transform:uppercase; margin:0; padding:0 20px;}
 
 .titleBox {position:relative; width:100%; max-width:632px; background: url(../images/divider.png) no-repeat 50% 15px; margin:50px auto 60px; text-align:center; height:80px;
 		h1 {background:#FFF;}
 }
 
+// @extend
 p.description {text-align:center; font-size:17px; line-height:25px;}
 
 #about {overflow:hidden;
-	img {float:left; margin-right:60px;}
+	img {float:left; margin-right:60px; width:40%;}
 	p {line-height:23px;
 		&.readMore a {text-transform:uppercase; color:#e92544;}
 	}
@@ -28,7 +31,7 @@ p.description {text-align:center; font-size:17px; line-height:25px;}
 #testimonials {position:relative; display:inline-block; width:100%; background:#bd8bf1; color:#FFF; text-align:center; padding:70px 0 40px; margin-bottom:0;
 	.wrapper {background: url(../images/testimonialBg.png) no-repeat 50% 20px;}
 	h1 {background:#bd8bf1;}
-	.container {width:895px; margin:0 auto; overflow:hidden;}
+	.container {width:790px; margin:0 auto; overflow:hidden;}
 	.item {padding:20px 50px; font-style:italic; font-size:16px;}
 	.owl-controls {float:left; width:100%; margin-top:10px;
 		.owl-page {display:inline-block; border:4px solid #000; border-radius:10px; margin:10px; cursor:pointer;
@@ -108,24 +111,27 @@ p.description {text-align:center; font-size:17px; line-height:25px;}
 }
 
 .page {margin-bottom:80px;
-	h2 {font-size:28px; font-weight:600; line-height:25px; text-transform:uppercase; border-bottom:1px solid #000; padding-bottom:20px; padding-left:25px;
-		&:before {content:'1'; position:absolute; left:-56px; border-bottom:1px solid #000; padding:0 20px 20px;}
+	h2 {font-size:28px; font-weight:600; line-height:25px; text-transform:uppercase; padding-bottom:20px; padding-left:25px;
+		
 	}
 	article {
+		
 		p {font-size:14px; line-height:21px; padding-left:25px; margin-bottom:25px;
 			&.description {
 				@extend p.description;
 				strong {display:block;}
 			}
 		}
-	&.withSidebar {position:relative; float:left; width:60%; border-left:1px solid #000;}
+	&.withSidebar {
+		&:before {content:''; position:absolute; left:-56px; border-bottom:1px solid #000; padding:0 20px 20px;}
+		position:relative; float:left; width:60%; border-left:1px solid #000;
+	}
 	&.fullWidth {}
 
 	}
 	aside {position:relative; float:right; width:27%; margin-left:2%; border-left:1px solid #000;
-		h2 {
-			&:before {content:'2';}
-		}
+		&:before {content:''; position:absolute; left:-56px; border-bottom:1px solid #000; padding:0 20px 20px;}
+		position:relative; float:left; width:60%; border-left:1px solid #000;
 	}
 	&:after {content:''; display:table; clear:both;}
 }
@@ -158,6 +164,7 @@ p.description {text-align:center; font-size:17px; line-height:25px;}
 	.nine5 {width:95%;}
 	.ten {width:100%;}
 }
+.home .progressBar {width:49%; float:left; margin:0;}
 
 #ourSpecialties {text-align:center;
 	p {width:70%; margin:0 auto 80px; }

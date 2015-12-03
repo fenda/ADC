@@ -1,0 +1,42 @@
+doctype html
+html(lang="en")
+	head
+		title Artistic Dance Center
+		link(href='css/vendor/font-awesome.min.css', rel='stylesheet')
+		link(href='css/style.min.css', rel='stylesheet')
+		link(href='css/vendor/owl.carousel.min.css', rel='stylesheet')
+		link(href='css/vendor/owl.transition.min.css', rel='stylesheet')
+	body
+		include ./partials/header.jade
+
+		section.page
+			.pageHeader
+				img(src='images/header-about.jpg')
+				.wrapper
+					h1 About ADC
+
+			.wrapper
+				article.withSidebar
+					h2 &nbsp;
+
+					h4 MAIN COMPANY
+					p Artistic Dance Theater is a company of young, talented dancers and successful, dedicated teachers aspiring to reach their dreams of excellence, professionalism and artistry.
+
+					p Artistic Dance Theater presents world-class performances at an affordable price. As a non-profit organization, we are proud to provide scholarships for underprivileged children. ADT strives to be a company that offers culture, entertainment and diversity to our community, as well as, providing many opportunities for children and adults.
+
+					p The dancers of Artistic Dance Theater have had the privilege of performing for many different communities and venues. ADT has presented The Nutcracker for four years consecutively in venues such as Florida International University, The Manuel Artime Theater in Miami, The Fall's Miracle On 36th Street Parade, The Three Kings Parade, Christmas at Bayfront Park and other Miami area events. ADT has also been invited to perform other classical and contemporary pieces for The Taste of Doral, Health and Fitness Expo at Miami Beach Convention Center and Hispanic Heritage week at The Falls Shopping Center. It is the goal of ADT to continue serve our community by educating and entertaining through the art of dance and providing a safe haven for young dancers in South Florida.
+
+					h4 JUNIOR COMPANY / APPRENTICE PROGRAM
+					p Artistic Dance Theater's apprentice program is designed for students 7 years and older who have exceptional talent and a serious interest in ballet. This program offers additional clasees and more opportunities to perform and compete. By audition only.
+
+				aside
+					h2 Sponsorships
+
+		
+		include ./partials/free_classes.jade		
+		include ./partials/footer.jade
+
+
+		script(src='scripts/vendor/jquery-2.min.js')
+		script(src='scripts/vendor/owl.min.js')
+		script(src='scripts/scripts.min.js')
