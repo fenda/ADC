@@ -49,7 +49,8 @@ module.exports = function(grunt){
 					'public/css/style.min.css': 'public/css/style.css',
 					'public/css/vendor/font-awesome.min.css': 'public/css/vendor/font-awesome/font-awesome.css',
 					'public/css/vendor/owl.carousel.min.css': 'app/css/vendor/owl.carousel.css',
-					'public/css/vendor/owl.transition.min.css': 'app/css/vendor/owl.transition.css'
+					'public/css/vendor/owl.transition.min.css': 'app/css/vendor/owl.transition.css',
+					'public/css/vendor/mCustomScrollbar.min.css': 'app/css/vendor/mCustomScrollbar.css'
 				}
 			}
 		},
@@ -92,7 +93,8 @@ module.exports = function(grunt){
 		},
 		watch: {
 			options: {
-				livereload: true
+				livereload: true,
+				interval: 5007
 			},
 			scripts: {
 				files: ['app/scripts/**'],
@@ -122,5 +124,5 @@ module.exports = function(grunt){
 	grunt.loadNpmTasks('grunt-contrib-imagemin');
 
 	grunt.registerTask('build', ['clean', 'sass', /*'haml',*/ 'jade', 'jshint', 'uglify', 'cssmin', 'imagemin']);
-	grunt.registerTask('default', ['build', 'connect', 'watch']);
+	grunt.registerTask('default', ['sass', 'jade', 'connect', 'watch']);
 };

@@ -95,7 +95,7 @@ ul.info {text-align:center; width:100%; list-style:none; margin:40px 0 60px; dis
 }
 
 
-#classInfo {color:#FFF;
+#classInfo {color:#FFF; margin-top:70px;
 	.purple {background:$purple;}
 	.pink {background:$pink;}
 	.black {background:#000;}
@@ -105,8 +105,6 @@ ul.info {text-align:center; width:100%; list-style:none; margin:40px 0 60px; dis
 
 	.item {position:relative; width:100%; margin-bottom:20px;
 		&:after {content:''; display:table; clear:both;}
-
-		.classInfo {}
 	}
 
 	.col4, .col6 {float:left;
@@ -135,5 +133,40 @@ ul.info {text-align:center; width:100%; list-style:none; margin:40px 0 60px; dis
 
 	.black {
 		h3 {border-bottom-color:$pink;}
+	}
+}
+
+// Teachers
+#theTeachers {
+	.info {width:100%; max-width:550px; padding:4%; color:#FFF; text-align:center;
+		h3, h4 {text-align:center; text-transform:uppercase; font-weight:600; display:inline-block; margin:0;}
+		h3 {font-size:22px; border-bottom:1px solid #000; padding-bottom:15px;}
+		h4 {font-size:15px; padding-top:10px; margin-bottom:20px;}
+		p {text-align:left;}
+	}
+	.imgLeft {
+		.image {float:right;}
+		.info {float:left;}
+	}
+	.imgRight {
+		.image {float:left;}
+		.info {float:right;}
+	}
+	.col5 {float:left; width:50%;
+		.image {width:100%; max-width:550px; position:relative;
+			img {float:left;}
+			ul {position:absolute; bottom:0; left:0; width:100%; background:rgba(189,139,241,.6); list-style:none; text-align:center; margin:0; padding:0;
+				li {display:inline-block; font-size:23px; padding:0; margin:12px 3px;
+					a {color:#FFF; padding:2px 4px; 
+						&:hover {color:$pink; transition:.5s;}
+					}
+				}
+			}
+		}
+	}
+
+	.pink {background:$pink;}
+	.black {background:#000;
+		h3 {border-bottom:1px solid $pink;}
 	}
 }

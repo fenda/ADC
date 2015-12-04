@@ -1273,7 +1273,8 @@ ul.info {
   clear: both; }
 
 #classInfo {
-  color: #FFF; }
+  color: #FFF;
+  margin-top: 70px; }
   #classInfo .purple {
     background: #bd8bf1; }
   #classInfo .pink {
@@ -1334,5 +1335,72 @@ ul.info {
     float: right; }
   #classInfo .black h3 {
     border-bottom-color: #e52b50; }
+
+#theTeachers .info {
+  width: 100%;
+  max-width: 550px;
+  padding: 4%;
+  color: #FFF;
+  text-align: center; }
+  #theTeachers .info h3, #theTeachers .info h4 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: inline-block;
+    margin: 0; }
+  #theTeachers .info h3 {
+    font-size: 22px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 15px; }
+  #theTeachers .info h4 {
+    font-size: 15px;
+    padding-top: 10px;
+    margin-bottom: 20px; }
+  #theTeachers .info p {
+    text-align: left; }
+#theTeachers .imgLeft .image {
+  float: right; }
+#theTeachers .imgLeft .info {
+  float: left; }
+#theTeachers .imgRight .image {
+  float: left; }
+#theTeachers .imgRight .info {
+  float: right; }
+#theTeachers .col5 {
+  float: left;
+  width: 50%; }
+  #theTeachers .col5 .image {
+    width: 100%;
+    max-width: 550px;
+    position: relative; }
+    #theTeachers .col5 .image img {
+      float: left; }
+    #theTeachers .col5 .image ul {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(189, 139, 241, 0.6);
+      list-style: none;
+      text-align: center;
+      margin: 0;
+      padding: 0; }
+      #theTeachers .col5 .image ul li {
+        display: inline-block;
+        font-size: 23px;
+        padding: 0;
+        margin: 12px 3px; }
+        #theTeachers .col5 .image ul li a {
+          color: #FFF;
+          padding: 2px 4px; }
+          #theTeachers .col5 .image ul li a:hover {
+            color: #e52b50;
+            transition: .5s; }
+#theTeachers .pink {
+  background: #e52b50; }
+#theTeachers .black {
+  background: #000; }
+  #theTeachers .black h3 {
+    border-bottom: 1px solid #e52b50; }
 
 /*# sourceMappingURL=style.css.map */
