@@ -16,6 +16,11 @@ $.fn.equalHeight = function(tab){
 	$element.height(height);
 };
 
+// active item
+$(function() {
+  $('nav a[href^="/' + location.pathname.split("/")[1] + '"]').addClass('active');
+});
+
 $(document).ready(function(){
 	$.fn.sliderHeight();
 	$.fn.equalHeight();

@@ -560,7 +560,7 @@ th {
       #classes .box p.link {
         text-transform: uppercase; }
 
-#contact #freeClasses {
+.contact #freeClasses {
   margin-bottom: 0; }
 
 #form {
@@ -1266,5 +1266,73 @@ ul.info {
     font-weight: 600; }
   ul.info a {
     color: #e52b50; }
+
+.row:after {
+  content: '';
+  display: table;
+  clear: both; }
+
+#classInfo {
+  color: #FFF; }
+  #classInfo .purple {
+    background: #bd8bf1; }
+  #classInfo .pink {
+    background: #e52b50; }
+  #classInfo .black {
+    background: #000; }
+  #classInfo h3 {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 33px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    border-bottom: 1px solid #000;
+    padding-bottom: 6px; }
+  #classInfo a {
+    color: #FFF;
+    display: block;
+    text-transform: uppercase;
+    margin-top: 20px; }
+  #classInfo .item {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px; }
+    #classInfo .item:after {
+      content: '';
+      display: table;
+      clear: both; }
+  #classInfo .col4, #classInfo .col6 {
+    float: left; }
+    #classInfo .col4 .classInfo, #classInfo .col6 .classInfo {
+      position: absolute;
+      height: 100%;
+      padding: 1.5% 3%; }
+  #classInfo .col4 {
+    width: 40%; }
+    #classInfo .col4:first-of-type {
+      padding-right: 10px; }
+    #classInfo .col4:last-of-type {
+      padding-left: 10px; }
+    #classInfo .col4 .classInfo {
+      width: 50%; }
+  #classInfo .col6 {
+    width: 60%; }
+    #classInfo .col6:first-of-type {
+      padding-right: 10px; }
+    #classInfo .col6:last-of-type {
+      padding-left: 10px; }
+    #classInfo .col6 .classInfo {
+      width: 33%; }
+  #classInfo .left .classInfo {
+    right: 0; }
+  #classInfo .left img {
+    float: left; }
+  #classInfo .right .classInfo {
+    left: 0; }
+  #classInfo .right img {
+    float: right; }
+  #classInfo .black h3 {
+    border-bottom-color: #e52b50; }
 
 /*# sourceMappingURL=style.css.map */
