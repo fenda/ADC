@@ -497,6 +497,9 @@ th {
     #header ul li:hover ul {
       display: block; }
 
+body.home li.home a, body.classes li.classes a, body.schedule li.schedule a {
+  color: #e52b50 !important; }
+
 #slider {
   position: relative;
   overflow: hidden; }
@@ -592,7 +595,7 @@ th {
 :-ms-input-placeholder {
   color: #555; }
 
-#map {
+#map iframe {
   pointer-events: none; }
 
 form .button {

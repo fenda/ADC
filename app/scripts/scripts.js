@@ -25,10 +25,13 @@ $( "#map" ).mouseleave(function() {
 });
 
 $.fn.teachersBox = function(){
-	$('#theTeachers .row').each(function(index, element){
-		var imgHeight = $(element).parent().find('img').height();
-		$(element).find('.info').css('height', imgHeight);
-	});
+	setTimeout(function(){
+		$('#theTeachers .row').each(function(index, element){
+			var imgHeight = $(element).parent().find('img').height();
+			$(element).find('.info').css('height', imgHeight);
+		});
+	}, 1000);
+	
 };
 
 // active item

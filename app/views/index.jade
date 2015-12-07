@@ -10,6 +10,10 @@ html(lang="en")
 		meta(name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1')
 		meta(name='author' content='Fernanda Sampaio')
 
+		res.render('/path', {
+			path: req.path
+		});
+
 	body.home
 		include ./partials/header.jade
 		include ./partials/slider.jade
