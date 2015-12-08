@@ -10,10 +10,6 @@ html(lang="en")
 		meta(name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1')
 		meta(name='author' content='Fernanda Sampaio')
 
-		res.render('/path', {
-			path: req.path
-		});
-
 	body.home
 		include ./partials/header.jade
 		include ./partials/slider.jade
@@ -141,6 +137,7 @@ html(lang="en")
 				p.description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
 				.carousel
+					#instafeed
 					.item
 						a(href='#')
 							.hoverDiag
@@ -202,7 +199,7 @@ html(lang="en")
 
 		include ./partials/footer.jade
 
-
 		script(src='scripts/vendor/jquery-2.min.js')
 		script(src='scripts/vendor/owl.min.js')
+		script(src='scripts/vendor/instafeed.min.js')
 		script(src='scripts/scripts.min.js')

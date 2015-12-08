@@ -94,6 +94,14 @@ $(document).ready(function(){
 			rewindNav: false
 		});
 	}
+
+	//instagram feed
+	/*var feed = new Instafeed({
+		get: 'tagged',
+		tagName: 'awesome',
+		clientId: 'YOUR_CLIENT_ID'
+	});
+	feed.run();*/
 });
 
 $(window).resize(function() {

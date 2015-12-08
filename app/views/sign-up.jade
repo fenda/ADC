@@ -1,0 +1,55 @@
+doctype html
+html(lang="en")
+	head
+		title Artistic Dance Center
+		link(href='css/vendor/font-awesome.min.css', rel='stylesheet')
+		link(href='css/style.min.css', rel='stylesheet')
+		//link(href='css/vendor/owl.carousel.min.css', rel='stylesheet')
+		//link(href='css/vendor/owl.transition.min.css', rel='stylesheet')
+	body.contact
+		include ./partials/header.jade
+
+		section.page
+			.pageHeader
+				img(src='images/header/classes.jpg')
+				.wrapper
+					h1 Sign Up Now
+
+			.wrapper
+				article
+					p.description Please fill out the following form if you are interested in attending 2 free trial classes:
+
+			#form
+				// h3 Please fill out the following form if you are interested in attending 2 free trial classes:
+
+				form(action'', method='post')
+					.field
+						input(type='text', name='name', id='name', placeholder='Your name')
+					.field
+						input(type='text', name='email', id='email', placeholder='Email')
+					.field
+						input(type='tel', name='phone', id='phone', placeholder='Phone Number')
+					.field
+						input(type='text', name='cell', id='cell', placeholder='Cell Number')
+					.field
+						textarea(type='text', name='address', id='address', placeholder='Address')
+					.field
+						input(type='text', name='student', id='student', placeholder='Student Name')
+					.field
+						input(type='number', name='age', id='age', placeholder='Age')
+					.field
+						textarea(type='text', name='what', id='what', placeholder='What classes would you be interested in?')
+					.field
+						textarea(type='text', name='when', id='when', placeholder='When would you like to start classes?')
+					.field
+						textarea(type='text', name='how', id='how', placeholder='How did you hear about us?')
+					.button
+						input(type='submit', name='submit', value='Submit').submitBtn
+
+		
+		include ./partials/footer.jade
+
+
+		script(src='scripts/vendor/jquery-2.min.js')
+		//script(src='scripts/vendor/owl.min.js')
+		script(src='scripts/scripts.min.js')

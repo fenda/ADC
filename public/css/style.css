@@ -458,8 +458,7 @@ th {
 
 #header {
   background: #132438;
-  padding: 20px 0;
-  overflow: hidden; }
+  padding: 20px 0; }
   #header .logo {
     float: left; }
   #header nav {
@@ -496,6 +495,10 @@ th {
           content: ''; }
     #header ul li:hover ul {
       display: block; }
+  #header:after {
+    content: '';
+    clear: both;
+    display: table; }
 
 body.home li.home a, body.classes li.classes a, body.schedule li.schedule a {
   color: #e52b50 !important; }
@@ -1405,5 +1408,73 @@ ul.info {
   background: #000; }
   #theTeachers .black h3 {
     border-bottom: 1px solid #e52b50; }
+
+@media (max-width: 1120px) {
+  .wrapper {
+    padding: 0 2%; }
+
+  #preheader p {
+    font-size: 12px; }
+
+  #header {
+    font-size: 13px; }
+    #header ul li {
+      margin: 0 5px; }
+
+  #classes {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    left: 0;
+    height: auto;
+    text-align: center; }
+    #classes .wrapper {
+      padding: 0; }
+    #classes .box {
+      margin: 0;
+      float: none;
+      display: inline-block;
+      width: 33%; }
+      #classes .box:hover {
+        top: 0; } }
+@media (max-width: 980px) {
+  #header nav {
+    position: relative; }
+    #header nav a.openNav {
+      position: absolute;
+      right: 20px;
+      top: 30px;
+      font-size: 20px; }
+    #header nav ul {
+      position: absolute;
+      top: 30px;
+      right: 0;
+      text-align: right;
+      background: #132438;
+      z-index: 9;
+      padding: 25px;
+      display: none; }
+      #header nav ul li {
+        padding: 6px 0;
+        border-bottom: 1px solid #FFF;
+        width: 100%; } }
+@media (max-width: 768px) {
+  #preheader .left {
+    float: none;
+    display: inline-block; }
+
+  #preheader div.left, #preheader div.right {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0 0; }
+
+  #preheader div.right {
+    padding-bottom: 10px; }
+
+  #preheader p {
+    margin: 0 15px; } }
+@media (min-width: 980px) {
+  #header nav a.openNav {
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */
