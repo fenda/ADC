@@ -9,7 +9,7 @@
 }
 
 #header {background:$darkBlue; padding:20px 0;
-	.logo {float:left;}
+	.logo {float:left; width:370px;}
 	nav {float:right;
 		a {color:#FFF; text-decoration:none;
 			&.active, &:hover {color:$pink;}

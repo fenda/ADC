@@ -32,7 +32,19 @@ $.fn.teachersBox = function(){
 			$(element).find('.info').css('height', imgHeight);
 		});
 	}, 1000);
-	
+};
+
+// mobile nav
+$.fn.mobileNav = function(){
+	$('#header nav a.openNav').on('click', function(e){
+		e.preventDefault();
+		$('#header nav ul').addClass('open');
+	});
+	$('#header nav a.closeNav').on('click', function(e){
+		e.preventDefault();
+		$('#header nav ul').removeClass('open');
+	});
+
 };
 
 // active item
@@ -44,6 +56,7 @@ $(document).ready(function(){
 	$.fn.sliderHeight();
 	$.fn.equalHeight();
 	$.fn.teachersBox();
+	$.fn.mobileNav();
 	
 	if($('#slider').length > 0) {
 		$('#slider .owl-carousel').owlCarousel({
@@ -68,10 +81,10 @@ $(document).ready(function(){
 		$('#ourStudio .carousel').owlCarousel({
 			items: 3,
 			itemsDesktop: false,
-			itemsDesktopSmall: 2,
-			itemsTablet: 2,
-			itemsTabletSmall: 2,
-			itemsMobile:1,
+			itemsDesktopSmall: false,
+			itemsTablet: 	[768,2],
+			itemsTabletSmall: false,
+			itemsMobile: [479,1],
 			navigation: true,
 			navigationText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
 			//nav:true,
@@ -84,10 +97,10 @@ $(document).ready(function(){
 		$('#ourTeachers .carousel').owlCarousel({
 			items: 4,
 			itemsDesktop: false,
-			itemsDesktopSmall: 3,
-			itemsTablet: 3,
-			itemsTabletSmall: 2,
-			itemsMobile:1,
+			itemsDesktopSmall: false,
+			itemsTablet: [768,3],
+			itemsTabletSmall: false,
+			itemsMobile:[480,2],
 			navigation: true,
 			navigationText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
 			//nav:true,
