@@ -480,10 +480,8 @@ th {
         margin-right: 0; }
     #header ul ul {
       position: absolute;
-      margin: 0;
       padding: 0;
       padding-top: 12px;
-      margin-left: 20px;
       display: none; }
       #header ul ul li {
         text-transform: none;
